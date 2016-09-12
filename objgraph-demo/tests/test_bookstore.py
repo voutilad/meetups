@@ -6,12 +6,12 @@ from io import StringIO
 from bookstore import Book, Page
 
 
-def test_building_a_book(booktype):
+def test_building_a_book(book_fixture):
     """
     Can we create a new Book and add some Page's?
     :return: None
     """
-
+    booktype = book_fixture[0]
     book = booktype(title='The Hobbit')
     assert book.title == 'The Hobbit'
     assert book.pages == []
@@ -23,16 +23,18 @@ def test_building_a_book(booktype):
     assert book.pages == [page]
     assert len(book) == 1
 
-    book.add_page('This is page 2!')
+    book.append(Page('This is page 2!'))
     assert book.pages[-1].text == 'This is page 2!'
     assert len(book) == 2
 
 
-def test_garbage_collection(booktype):
+def test_garbage_collection(book_fixture):
     """
     Build a Book and see if it gets garbage collected
     :return: None
     """
+    booktype = book_fixture[0]
+    bookclass = book_fixture[1]
 
     # we'll use this to collect output from objgraph
     stdout = StringIO()
@@ -45,25 +47,22 @@ def test_garbage_collection(booktype):
     objgraph.show_growth(file=stdout)
 
     book = booktype(title='Total Garbage')
-    book.add_page('This is page 1')
-    book.add_page('This is page 2')
+    book.append(Page('This is page 1'))
+    book.append(Page('This is page 2'))
 
     # look for growth
-    print('Growth:\n')
+    print('\n Growth:\n')
     objgraph.show_growth()
 
     # let's destroy our book
-    print('\nBurning our book!')
+    print('\n Burning our book!')
     del book
     gc.collect()
 
-    # look for shrinkage
-    print('\nMake sure nothing is left.')
-    books = objgraph.by_type(str(booktype))
-    print(str(booktype) + ' == ' + str(books))
+    # not even ashes should remain!
+    print('\n Make sure nothing is left.')
+    books = objgraph.by_type(bookclass)
+    print(bookclass + ' == ' + str(books))
     assert books == []
 
-    pages = objgraph.by_type('Page')
-    print('pages == ' + str(pages))
-    assert pages == []
 
