@@ -6,13 +6,13 @@ from io import StringIO
 from bookstore import Book, Page
 
 
-def test_building_a_book():
+def test_building_a_book(booktype):
     """
     Can we create a new Book and add some Page's?
     :return: None
     """
 
-    book = Book(title='The Hobbit')
+    book = booktype(title='The Hobbit')
     assert book.title == 'The Hobbit'
     assert book.pages == []
 
