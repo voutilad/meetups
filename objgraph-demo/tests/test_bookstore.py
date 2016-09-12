@@ -13,7 +13,7 @@ def test_building_a_book():
     assert book.pages == []
 
     page = Page(text='This is page 1!')
-    assert page.text == 'This is page 1'
+    assert page.text == 'This is page 1!'
 
     book.append(page)
     assert book.pages == [page]
