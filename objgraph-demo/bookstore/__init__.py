@@ -1,7 +1,7 @@
 """
 A Bookstore!
 """
-from .book import Book
+from .book import Book, LeakyBook
 from .page import Page
 
-__all__ = [Book, Page]
+__all__ = [Book, LeakyBook, Page]
