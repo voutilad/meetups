@@ -4,6 +4,9 @@ A Book
 
 
 class Book(object):
+    """
+    This book type is ok. No leaks!
+    """
 
     def __init__(self, title=None):
         self.title = title
@@ -17,6 +20,9 @@ class Book(object):
 
 
 class LeakyBook(object):
+    """
+    This book type is leaky :-(
+    """
 
     def __init__(self, title=None):
         self.title = title

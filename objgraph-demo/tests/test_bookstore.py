@@ -24,7 +24,7 @@ def test_building_a_book(booktype):
     assert len(book) == 1
 
 
-def test_garbage_collection():
+def test_garbage_collection(booktype):
     """
     Build a Book and see if it gets garbage collected
     :return: None
