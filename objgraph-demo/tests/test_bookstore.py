@@ -23,6 +23,10 @@ def test_building_a_book(booktype):
     assert book.pages == [page]
     assert len(book) == 1
 
+    book.add_page('This is page 2!')
+    assert book.pages[-1].text == 'This is page 2!'
+    assert len(book) == 2
+
 
 def test_garbage_collection(booktype):
     """
@@ -40,9 +44,9 @@ def test_garbage_collection(booktype):
     objgraph.show_growth(file=stdout)
     objgraph.show_growth(file=stdout)
 
-    book = Book(title='Total Garbage')
-    book.append(Page(text='This is page 1'))
-    book.append(Page(text='This is page 2'))
+    book = booktype(title='Total Garbage')
+    book.add_page('This is page 1')
+    book.add_page('This is page 2')
 
     # look for growth
     print('Growth:\n')
@@ -55,6 +59,11 @@ def test_garbage_collection(booktype):
 
     # look for shrinkage
     print('\nMake sure nothing is left.')
-    books = objgraph.by_type('Book')
-    print('books == ' + str(books))
+    books = objgraph.by_type(str(booktype))
+    print(str(booktype) + ' == ' + str(books))
     assert books == []
+
+    pages = objgraph.by_type('Page')
+    print('pages == ' + str(pages))
+    assert pages == []
+
