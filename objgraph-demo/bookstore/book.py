@@ -35,6 +35,9 @@ class PageSequence(collections.MutableSequence):
     def __delitem__(self, index):
         return self.instances.__delitem__(index)
 
+    def __eq__(self, other):
+        return self.instances == other
+
 
 class Book(object):
     """
