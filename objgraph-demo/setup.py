@@ -1,4 +1,4 @@
-from distutils.core import setup
+from setuptools import setup
 
 setup(
     name='objgraph-demo',
@@ -9,5 +9,6 @@ setup(
     author='Dave Voutila',
     author_email='voutilad@gmail.com',
     description='Example of using Objgraph',
-    test_require=['pytest',]
+    setup_requires=['pytest-runner',],
+    tests_require=['pytest',],
 )
