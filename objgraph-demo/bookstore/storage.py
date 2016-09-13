@@ -36,6 +36,22 @@ class PageSequence(collections.MutableSequence):
     def __eq__(self, other):
         return retrieve_pages(self.book) == other
 
+    def clear(self):
+        delete_book(self.book)
+
+
+def delete_book(book):
+    """
+    Delete all pages and related Book index
+    :param book: Book to delete
+    :return: True if successful, False if unable to delete
+    """
+    try:
+        del _pages[book]
+    except KeyError:
+        return False
+
+    return True
 
 def store_page(book, page):
     """
