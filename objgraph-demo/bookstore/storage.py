@@ -2,7 +2,6 @@
 Dumb fake abstracted away storage
 """
 import collections
-import weakref
 
 # this is our fake storage mechanism
 _pages = {}
