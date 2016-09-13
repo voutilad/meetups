@@ -2,10 +2,10 @@
 Dumb fake abstracted away storage
 """
 import collections
-
+import weakref
 
 # this is our fake storage mechanism
-_pages = {}
+_pages = weakref.WeakKeyDictionary()
 
 
 class PageSequence(collections.MutableSequence):
