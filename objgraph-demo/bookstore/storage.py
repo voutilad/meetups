@@ -2,7 +2,7 @@
 Dumb fake abstracted away storage
 """
 import collections
-
+import weakref
 
 # this is our fake storage mechanism
 _pages = {}
@@ -13,7 +13,7 @@ class PageSequence(collections.MutableSequence):
     This is an example of where abstractions leak...and so can memory!
     """
     def __init__(self, book):
-        self.book = book
+        self.book = id(book)
 
     def __len__(self):
         return len(retrieve_pages(self.book))
