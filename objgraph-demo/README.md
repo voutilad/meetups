@@ -35,7 +35,7 @@ storage layer that was poorly implemented.
 
 ```
 from bookstore import LeakyBook, Page
-book = LeakBook(title='Cooking with Leeks')
+book = LeakyBook(title='Cooking with Leeks')
 book.append(Page(text='Chapter 1: Making Leaks work for You'))
 ```
 
