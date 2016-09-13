@@ -56,6 +56,7 @@ def test_garbage_collection(book_fixture):
 
     # let's destroy our book
     print('\n Burning our book!')
+    book.pages.clear()
     del book
     gc.collect()
 
