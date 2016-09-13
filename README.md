@@ -17,3 +17,9 @@ activity.
 [![voutilad](https://avatars0.githubusercontent.com/u/9891346?v=3&s=84 "profile")](https://github.com/voutilad)
 [![sisu-llc](https://avatars3.githubusercontent.com/u/16563781?v=3&s=84 "profile")](https://github.com/sisu-llc)
 [![Free Law Project](https://avatars0.githubusercontent.com/u/6012898?v=3&s=84 "profile")](https://github.com/freelawproject)
+
+
+---
+
+###### About this page
+<sub>Rendered from [README.md](README.md) using [strapdown.js](https://strapdown.js).</sub>
