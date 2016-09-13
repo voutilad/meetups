@@ -5,7 +5,7 @@ Materials from [BTVPython](https://www.meetup.com/btvpython/) Meetups:
   * _gotta dig this stuff up and move it here..._
 * **Python Memory Leaks** _or an example in using objgraph_
   * [presentation](objgraph-demo/presentation/Meetup%20-%20Python%20Memory%20Leaks/index.html)
-  * [code](objgraph-demo/)
+  * [code](https://github.com/voutilad/meetups/tree/master/objgraph-demo)
 
 ---
 
