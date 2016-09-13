@@ -1,9 +1,25 @@
-<html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Dave's Meetup Materials!</title>
+  <script
+    src="https://code.jquery.com/jquery-3.1.0.min.js"
+    integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+    crossorigin="anonymous">
+  </script>
+</head>
 <body>
-  Check out
-    <a href="./objgraph-demo/presentation/Meetup - Python Memory Leaks/index.html">
-      my talk on Python memory leaks
-    </a>
+  <xmp id="markdown"></xmp>
 
+  <script type="text/javascript">
+    $(document).ready(function() {
+      //Grab our README.md and inject into the page.
+      $('#markdown').load('README.md');
+
+      //Load strapdown.js to render our markdown
+      $.getScript('http://strapdownjs.com/v/0.2/strapdown.js');
+
+    });
+  </script>
 </body>
 </html>
