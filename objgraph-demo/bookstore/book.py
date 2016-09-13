@@ -31,7 +31,6 @@ class LeakyBook(object):
         self.pages = PageSequence(self)
 
     def append(self, page):
-        page.book = self
         self.pages.append(page)
 
     def __len__(self):
