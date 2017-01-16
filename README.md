@@ -1,11 +1,19 @@
+## Where am I?
+Hey! These are some of my published presentations and works in a more consumable
+fashion than just skimming [my repos](https://github.com/voutilad).
+
 ### Burlington Python
-Materials from [BTVPython](https://www.meetup.com/btvpython/) Meetups:
+My materials from [BTVPython](https://www.meetup.com/btvpython/) Meetups:
 
 * **Vagrant Up!**
-  * _gotta dig this stuff up and move it here..._
+  * [presentation](vagrant/presentation/index.html)
+  * [related project](https://github.com/freelawproject/freelawmachine)
 * **Python Memory Leaks** _or an example in using objgraph_
   * [presentation](objgraph-demo/presentation/Meetup%20-%20Python%20Memory%20Leaks/index.html)
   * [code](https://github.com/voutilad/meetups/tree/master/objgraph-demo)
+* **Alexa Skills with Python**
+  * [meeting](https://www.meetup.com/btvpython/events/236830515/)
+  * [code](https://github.com/voutilad/alexa-btvpython)
 
 ---
 
