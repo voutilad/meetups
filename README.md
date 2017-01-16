@@ -18,6 +18,9 @@ My materials from [BTVPython](https://www.meetup.com/btvpython/) Meetups:
   * [meeting](https://www.meetup.com/btvpython/events/236830515/)
   * [code](https://github.com/voutilad/alexa-btvpython)
 
+### Coming Soon
+Hopefully some [Clojure](https://clojure.org)-related material!
+
 ---
 
 #### Other Code and Contributions!
