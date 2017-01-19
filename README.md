@@ -15,6 +15,7 @@ My materials from [BTVPython](https://www.meetup.com/btvpython/) Meetups:
   * [code](https://github.com/voutilad/meetups/tree/master/objgraph-demo)
 * **Alexa Skills with Python** _or "Alexa, make me a skill in Python"_
   * Presented 2017-01-19
+  * [presentation](alexa-btvpython/presentation/Alexa%20Skills%20in%20Python/index.html)
   * [meeting](https://www.meetup.com/btvpython/events/236830515/)
   * [code](https://github.com/voutilad/alexa-btvpython)
 
