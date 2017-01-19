@@ -14,7 +14,7 @@ My materials from [BTVPython](https://www.meetup.com/btvpython/) Meetups:
   * [presentation](objgraph-demo/presentation/Meetup%20-%20Python%20Memory%20Leaks/index.html)
   * [code](https://github.com/voutilad/meetups/tree/master/objgraph-demo)
 * **Alexa Skills with Python** _or "Alexa, make me a skill in Python"_
-  * Presented 2017-01-16
+  * Presented 2017-01-19
   * [meeting](https://www.meetup.com/btvpython/events/236830515/)
   * [code](https://github.com/voutilad/alexa-btvpython)
 
