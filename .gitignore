@@ -90,3 +90,34 @@ ENV/
 # Rope project settings
 .ropeproject
 .DS_Store
+
+#### LATEX! Thanks to: https://gist.github.com/kogakure/149016
+datetime/*.aux
+*.nav
+*.snm
+*.vrb
+_minted-*
+datetime/datetime.pdf
+*.glo
+*.idx
+*.log
+*.toc
+*.ist
+*.acn
+*.acr
+*.alg
+*.bbl
+*.blg
+*.dvi
+*.glg
+*.gls
+*.ilg
+*.ind
+*.lof
+*.lot
+*.maf
+*.mtc
+*.mtc1
+*.out
+*.synctex.gz
+

@@ -1,0 +1,48 @@
+\documentclass[10pt]{beamer}
+
+%\usetheme[progressbar=frametitle]{metropolis}
+\usepackage{appendixnumberbeamer}
+
+\usepackage{booktabs}
+\usepackage[scale=2]{ccicons}
+
+\usepackage{xspace}
+%\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{minted}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\title{datetime}
+\subtitle{A Tale of Pythonic Woe}
+% \date{\today}
+\date{23 August 2017}
+\author{Dave Voutila}
+\institute{Sisu Integrated Services, LLC}
+% \titlegraphic{\hfill\includegraphics[height=1.5cm]{logo.pdf}}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{Table of contents}
+  \setbeamertemplate{section in toc}[sections numbered]
+  \tableofcontents[hideallsubsections]
+\end{frame}
+
+\section{Introduction}
+\begin{frame}[fragile]{Backstory}
+Who am i?
+
+\begin{minted}{python}
+def myfun(x, y, z):
+	l = [x, y, z]
+	return ''.join(l)
+
+print("Hey l: %s" % (l))
+\end{minted}
+
+\end{frame}
+
+\end{document}
+
