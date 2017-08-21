@@ -11,6 +11,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{minted}
 
+\graphicspath{images/}
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 \title{datetime}
@@ -32,17 +33,29 @@
 
 \section{Introduction}
 \begin{frame}[fragile]{Backstory}
-Who am i?
-
-\begin{minted}{python}
-def myfun(x, y, z):
-	l = [x, y, z]
-	return ''.join(l)
-
-print("Hey l: %s" % (l))
-\end{minted}
+\begin{itemize}
+\item Contributor to \textbf{Flask-Ask}, a Python Amazon Alexa framework.
+\item Jumped on \textit{Issue 152: Flask Ask doesn't parse time stamp from Alexa properly...}
+\item Things when downhill from there...
+\end{itemize}
 
 \end{frame}
 
+\begin{frame}{The Problem}
+\begin{center}
+	\includegraphics[width=9cm]{./images/alexa-flow.png}
+	\begin{alertblock}{Attention}
+		json != json'
+	\end{alertblock}
+\end{center}
+\end{frame}
+
+\begin{frame}{A Tale of Two Timestamps}
+TODO: Talk about the two timestamps
+\end{frame}
+
+\section{Python's datetime}
+\begin{frame}{Python and Time ⏱}
+\end{frame}
 \end{document}
 
