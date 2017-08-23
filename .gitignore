@@ -97,7 +97,7 @@ datetime/*.aux
 *.snm
 *.vrb
 _minted-*
-datetime/datetime.pdf
+!datetime/datetime.pdf
 *.glo
 *.idx
 *.log
