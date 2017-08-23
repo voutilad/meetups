@@ -173,7 +173,7 @@ timestamp = aniso8601.parse_datetime(
 \end{frame}
 
 \renewcommand{\arraystretch}{1.5}
-\begin{frame}{Time Precision - Python's a bit Odd}
+\begin{frame}{Lesson 1: Python's a bit Odd (as is C\#)}
 	\begin{itemize}
 		\item Well...it's not just Python, but precision is key.
 	\end{itemize}
@@ -193,7 +193,41 @@ timestamp = aniso8601.parse_datetime(
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{Python Time Handling is System Dependent}
+\begin{frame}{Nobody will live to see 41091 AD anyways...}
+	\begin{figure}
+		\centering
+		\includegraphics[width=\textwidth]{images/valueerror.png}
+	\end{figure}
+	\begin{itemize}
+		\item Ok, so if Amazon sends milliseconds, lets scale it.
+	\end{itemize}
+\end{frame}
+
+\section{Second Attempt}
+\begin{frame}{Second Attempt}
+	\begin{itemize}
+		\item So turns out Python uses \textbf{microseconds}
+		\item Try this again, but now while scaling the value...
+	\end{itemize}
+	\begin{figure}
+		\centering
+		\includegraphics[width=\textwidth]{images/commit2.png}
+		\caption{core.py --- 17ba43a60fc4e0b91f00d596aa3cfc78c81771a9}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Never test on just your machine!}
+	\begin{itemize}
+		\item Windows: what the heck \shrug
+	\end{itemize}
+	\begin{figure}
+		\includegraphics[width=\textwidth]{images/windows-py27.png}
+		\vspace{1cm}
+		\includegraphics[width=\textwidth]{images/windows-py35.png}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Lesson 2: Python Time Handling is System Dependent}
 	\begin{columns}
 		\begin{column}{0.5 \textwidth}
 			\begin{itemize}
@@ -216,25 +250,6 @@ timestamp = aniso8601.parse_datetime(
 	\end{columns}
 \end{frame}
 
-\section{Second Attempt}
-\begin{frame}{Second Attempt}
-	\begin{itemize}
-		\item So turns out Python uses \textbf{microseconds}
-		\item Try this again...
-	\end{itemize}
-	\begin{figure}
-		\centering
-		\includegraphics[width=\textwidth]{images/commit2.png}
-		\caption{core.py --- 17ba43a60fc4e0b91f00d596aa3cfc78c81771a9}
-	\end{figure}
-\end{frame}
-
-\begin{frame}{Never test on just your machine!}
-	\begin{itemize}
-		\item (insert images of errors on Windows and Linux
-	\end{itemize}
-\end{frame}
-
 \section{Third Attempt}
 \begin{frame}{Third Attempt}
 	\begin{itemize}
@@ -249,7 +264,14 @@ timestamp = aniso8601.parse_datetime(
 
 \section{The End}
 \begin{frame}{Happy ending?}
-	TODO: add something
+	\begin{itemize}
+		\item Case closed! I guess it works now.
+		\item But...Python still thinks none of us will like to see 10000AD :-(
+	\end{itemize}
+	\begin{figure}
+		\includegraphics[width=\textwidth]{images/eol.png}
+		\caption{CPython's \_datetimemodule.c}
+	\end{figure}
 \end{frame}
 \end{document}
 
