@@ -3,6 +3,6 @@
     "type": "LaunchRequest",
     "requestId": "<guid>",
     "locale": "en-US",
-    "timestamp":    1234567890
+    "timestamp": 1234567890000
   }
 }
