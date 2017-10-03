@@ -5,6 +5,9 @@ fashion than just skimming [my repos](https://github.com/voutilad).
 ### Burlington Python
 My materials from [BTVPython](https://www.meetup.com/btvpython/) Meetups:
 
+* **Python's datetime** _or A Tale of Pythonic Woe_
+  * Presented 2017-08-23
+  * [presentation](datetime/datetime.pdf)
 * **Python Mocks 101** _or Fake it 'til you Make It_
   * Presented 2017-04-12
   * [presentation](python-mocks/Python%20Mocks/index.html)
