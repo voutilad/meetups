@@ -1,6 +1,8 @@
 #!/bin/sh
 
-for i in `find $1 -name '*.py' | grep -v test | grep -v Tools`
+LIST=$(find ${1} -name '*.py' | grep -v -e test -e Tools)
+for i in ${LIST}
 do
-	cat $i | grep -i '__main__' | awk -v "i=$i" '{ print i }' | sort -u
+	cat ${i} | grep -i '__main__' |
+		awk -v "i=${i}" '{ print i }' | sort -u
 done
