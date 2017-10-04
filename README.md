@@ -5,6 +5,9 @@ fashion than just skimming [my repos](https://github.com/voutilad).
 ### Burlington Python
 My materials from [BTVPython](https://www.meetup.com/btvpython/) Meetups:
 
+* **The Hidden Programs of Python**
+  * Presented 2017-10-04
+  * [presentation](hidden-py/hidden.md)
 * **Python's datetime** _or A Tale of Pythonic Woe_
   * Presented 2017-08-23
   * [presentation](datetime/datetime.pdf)
