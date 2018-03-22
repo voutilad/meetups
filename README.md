@@ -2,6 +2,12 @@
 Hey! These are some of my published presentations and works in a more consumable
 fashion than just skimming [my repos](https://github.com/voutilad).
 
+### BurlingonJS
+
+* **Idiots Guide to Sinon** _Spies, Stubs, and Mocks_
+  * Presented 2018-03-22
+  * [presentation](https://github.com/voutilad/sinon-for-idiots/blob/master/presentation.org)
+
 ### Burlington Python
 My materials from [BTVPython](https://www.meetup.com/btvpython/) Meetups:
 
